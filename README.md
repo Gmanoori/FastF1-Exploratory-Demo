@@ -63,7 +63,7 @@ As documented in `pyproject.toml`:
    jupyter lab
    ```
 
-   # OR
+   ### OR
 
    ```powershell
    jupyter notebook
