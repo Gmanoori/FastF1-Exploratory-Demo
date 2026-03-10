@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "fastf1-playground"
+version = "0.1.0"
+description = "Experimenting with the FastF1 API for Formula 1 data analysis"
+authors = ["Ganesh Manoori"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+# Core FastF1 library
+fastf1 = "^3.3"
+
+# Data handling
+pandas = "^2.2"
+numpy = "^1.26"
+
+# Plotting / visualization
+matplotlib = "^3.8"
+seaborn = "^0.13"
+plotly = "^5.20"
+
+# Notebook experimentation
+jupyter = "^1.0"
+jupyterlab-widgets = "3.0.15"
+notebook = "^7.0"
+ipykernel = "^6.29"
+
+# HTTP / API utilities (sometimes useful when extending analysis)
+requests = "^2.31"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3"
+ruff = "^0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
